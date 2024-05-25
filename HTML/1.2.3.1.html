@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title> M&oacute;dulos de Entrada-Salida</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">1.2.3.1 M&oacute;dulos de Entrada-Salida</h2>
+
+        <p>
+            Un m&oacute;dulo de E/S tiene la responsabilidad de controlar uno o
+             m&aacute;s dispositivos externos e intercambiar los datos entre esos 
+             dispositivos y la memoria central y/o los registros de la CPU. En consecuencia, 
+             el m&oacute;dulo de E/S debe tener una interfase interna al computador 
+             (al procesador y la memoria central) de alta velocidad y una interfase externa al computador 
+             (al dispositivo externo). Las funciones primordiales de un m&oacute;dulo de E/S:
+        </p>
+
+    </header>
+
+    <section class="content sau">
+        <br><br><br><br><br><br>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>Control y Temporizaci&oacute;n (de estados)</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>Comunicaci&oacute;n con el procesador</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>Comunicaci&oacute;n con el dispositivo</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>Buffering de datos</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>Detecci&oacute;n de errores</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>Manejo de Interrupciones en el bajo nivel</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="content about">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+            <p>Durante cualquier per&iacute;odo o instante, el procesador puede comunicarse con uno
+                 o m&aacute;s dispositivos externos (en rigor, con uno o m&aacute;s m&oacute;dulos de
+                  E/S) de manera impredecible, dependiendo de las necesidades de E/S de los
+                   programas que est&aacute;n ejecutando. Los recursos internos, como la memoria 
+                   docsity.como el bus del sistema, deben ser compartidos entre un n&uacute;mero de
+                    actividades incluyendo a la E/S de datos.  Luego, la funci&oacute;n de E/S debe
+                     incluir un requerimiento de control y temporizaci&oacute;n, para coordinar el 
+                     flujo del tr&aacute;fico de datos y señales entre los recursos internos 
+                     y los dispositivos externos. Por ejemplo, el controlar la transferencia de 
+                     datos desde un dispositivo externo y el procesador, puede incluir los siguientes pasos: 
+                    </p>
+    
+        </section>
+
+
+        <section class="content sau">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fab fa-angular"></i>
+                        <p> 1. El procesador interroga al m&oacute;dulo de E/S para verificar 
+                            el estado (status) del dispositivo conectado. </p>
+    
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-angular"></i>
+                        <p>2. El m&oacute;dulo de E/S devuelve el estado del dispositivo. </p>
+    
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-angular"></i>
+                        <p>  3. Si el dispositivo est&aacute; operable y listo para transmitir, 
+                            el procesador solicita la transferencia de datos, por medio de un 
+                            comando al m&oacute;dulo de E/S. </p>
+    
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-angular"></i>
+                        <p> 4. El m&oacute;dulo de E/S obtiene una unidad de datos del 
+                            dispositivo externo.</p>
+    
+                    </div>
+                    
+                    <div class="box">
+                        <i class="fab fa-angular"></i>
+                        <p> 5. Los datos son transferidos desde el m&oacute;dulo 
+                            de E/S al procesador </p>
+    
+                    </div>
+                </div>
+                
+                <p>   
+                    El simplificado escenario precedente tambi&eacute;n ilustra que el 
+                    m&oacute;dulo de E/S debe tener la capacidad de ocuparse de la comunicaci&oacute;n 
+                    con el procesador y el dispositivo externo. La comunicaci&oacute;n con el 
+                    procesador incluye: 
+                </p>
+
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fab fa-angular"></i>
+                        <p> Decodificaci&oacute;n del comando: El m&oacute;dulo de E/S acepta comandos desde 
+                            el procesador. Estos comandos generalmente son enviados como señales a trav&eacute;s 
+                            del bus de control </p>
+    
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-angular"></i>
+                        <p>Datos: Los datos son intercambiados entre el procesador y 
+                            el m&oacute;dulo de E/S a trav&eacute;s del bus de datos.</p>
+    
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-angular"></i>
+                        <p>Informe de Estados: Las señales de estados m&aacute;s
+                             comunes son BUSY y READY. Puede haber tambi&eacute;n 
+                             señales para informar varias condiciones de error </p>
+    
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-angular"></i>
+                        <p> Reconocimiento de direcciones: De la misma forma que 
+                            cada palabra en la memoria tiene una direcci&oacute;n, 
+                            tambi&eacute;n la tiene cada dispositivo de E/S</p>
+    
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            <section class="content price">
+            </section>
+            
+            <section class="content price">
+            </section>
+            
+            <section class="content price">
+                
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                <article class="contain">
+        
+                    <p>  En consecuencia, un m&oacute;dulo de E/S debe reconocer
+                         la direcci&oacute;n &uacute;nica asociada a cada perif&eacute;rico 
+                         que controla. * Comunicaci&oacute;n con el  dispositivo.  El modulo de 
+                         E/S debera hacer de buffer para equiparar las transferencias de datos
+                          a distintas velocidades y tambi&eacute;n es responsable de la detecci&oacute;n 
+                          de errores e informar al procesador de dichos errores.  
+                          Un m&oacute;dulo de E/S que carga con la mayor&iacute;a de los detalles
+                           del procesamiento, presentando una interfase de alto nivel a la CPU, 
+                           se conoce normalmente como un canal o un procesador de E/S. Un m&oacute;dulo 
+                           de E/S que es bastante primitivo y requiere un control detallado, se conoce 
+                           com&uacute;nmente como un controlador de E/S o un controlador de dispositivo. </p>
+    
+                           <p center><img src="../img/modulos.jpg" height="300" width="500"></p>
+                </article>    
+            </section>
+            <section class="content price">
+            </section>
+            
+</body>
+</html>

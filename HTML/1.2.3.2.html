@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Entrada-Salida Programada</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">1.2.3.2 Entrada-Salida Programada</h2>
+
+       
+
+    </header>
+   
+
+    <section class="content sau">
+        <p>
+            Para hacer la operaci&oacute;n de E/S entre el procesador
+             y el m&oacute;dulo de E/S, el procesador ejecuta un programa 
+             que controla toda la operaci&oacute;n de E/S (programaci&oacute;n, 
+             transferencia de datos y finalizaci&oacute;n).
+        </p>
+        <p>A continuaci&oacute;n, analizamos con m&aacute;s detalle la 
+            transferencia de un dato:
+        </p>
+    </section>
+
+    <section class="content about">
+
+        <p>Sincronizaci&oacute;n. Durante la sincronizaci&oacute;n, el procesador, como
+             responsable de la transferencia, ejecuta un programa que mira constantemente el 
+             estado del perif&eacute;rico consultando el registro de estado del m&oacute;dulo
+              de E/S. Este programa tiene un bucle que se ejecuta continuamente hasta que detecta 
+              el cambio de estado e indica que el perif&eacute;rico est&aacute; preparado.
+               Este m&eacute;todo de sincronizaci&oacute;n se denomina sincronizaci&oacute;n 
+               por encuesta o espera activa.
+            Mientras se lleva a cabo la sincronizaci&oacute;n, el procesador est&aacute;
+             dedicado al cien por cien a esta tarea y, por lo tanto, no puede atender a otros procesos o
+              aplicaciones. Si esta espera es muy larga, puede degradar el nivel de prestaciones
+               de todo el sistema. Por lo tanto, es recomendable que las transferencias hechas 
+               utilizando esta t&eacute;cnica sean cortas y r&aacute;pidas.
+</p>
+
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+
+            <p>Intercambio del dato. Durante el intercambio del dato, si es una operaci&oacute;n de 
+                lectura (entrada), el procesador lee el registro de datos del m&oacute;dulo de E/S 
+                para recoger el dato enviado por el perif&eacute;rico, y lo guarda en memoria; si
+                 es una operaci&oacute;n de escritura (salida), el procesador toma de la memoria el 
+                 dato que queremos enviar al perif&eacute;rico y lo escribe en el registro de datos 
+                 del m&oacute;dulo de E/S. Tanto este ejemplo como la descripci&oacute;n del 
+                 proceso de sincronizaci&oacute;n y transferencia de datos se ha hecho siguiendo 
+                 un modelo simplificado de operaci&oacute;n de E/S. Hay que tener presente que para
+                  programar una rutina que lleve a cabo una operaci&oacute;n de E/S con un perif&eacute;rico 
+                  concreto hay que conocer las direcciones de los puertos de E/S asociadas a los
+                   registros del m&oacute;dulo de E/S que gestiona este perif&eacute;rico y el significado 
+                   o la utilidad de cada uno de los bits. Dada la gran variedad de perif&eacute;ricos y su
+                    creciente complejidad, interpretar toda esta informaci&oacute;n es una tarea bastante 
+                    complicada y generalmente son los propios fabricantes quienes desarrollan estas rutinas.
+            </p>
+
+        </article>    
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Arquitectura de Computadoras Secuenciales</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header"><br><br><br><br><br><br>
+        <h2 class="title">4.2.2 Arquitectura de Computadoras Secuenciales</h2>
+
+        <p>
+            Probablemente la clasificaci&oacute;n m&aacute;s popular de computadores sea la 
+            clasificaci&oacute;n de Flynn. Esta tax&oacute;noma de las arquitecturas est&aacute; 
+            basada en la clasificaci&oacute;n atendiendo al flujo de datos e instrucciones en un sistema.
+             Un flujo de instrucciones es el conjunto de instrucciones secuenciales que son ejecutadas por
+              un &uacute;nico procesador, y un flujo de datos es el flujo secuencial de datos requeridos 
+              por el flujo de instrucciones. Con estas consideraciones, Flynn clasifica los sistemas en 
+              cuatro categor&iacute;as:
+
+        </p>
+    </header>
+
+    <section class="content sau">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">SISD (Single Instruction stream, Single Data stream)</h2>
+            
+        <p>
+            Flujo &uacute;nico de instrucciones y flujo &uacute;nico de datos. 
+            Este el concepto de arquitectura serie de Von Neumann donde, en cualquier momento,
+            s&oacute;lo se est&aacute; ejecutando una &uacute;nica instrucci&oacute;n. A menudo
+         a los SISD se les conoce como computadores serie escalares. Todas las maquinas SISD poseen un
+          registro simple que se llama contador de programa que asegura la ejecuci&oacute;n en serie 
+          del programa. Conforme se van leyendo las instrucciones de la memoria, el contador de programa
+           se actualiza para que apunte a la siguiente instrucci&oacute;n a procesar en serie. Pr&aacute;
+           cticamente ning&uacute;n computador puramente SISD se fabrica hoy en d&iacute;a ya que la 
+           mayor&iacute;a de procesadores modernos incorporan alg&uacute;n grado de paralelizacion como
+            es la segmentaci&oacute;n de instrucciones o la posibilidad de lanzar dos instrucciones a un
+             tiempo (superescalares).
+
+        </p>
+
+        
+        <p center><img src="../img/sisd.png" height="300" width="400"></p>
+    </section>
+
+    
+    <section class="content price">
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <article class="contain">
+            <h2 class="title">MISD (Multiple Instruction stream, Single Data stream)</h2>
+            <p>
+                Flujo m&uacute;ltiple de instrucciones y &uacute;nico flujo de datos. 
+                Esto significa que varias instrucciones act&uacute;an sobre el mismo y &uacute;nico 
+                trozo de datos. Este tipo de m&aacute;quinas se pueden interpretar de dos maneras.
+                 Una es considerar la clase de m&aacute;quinas que requerir&iacute;an que unidades de 
+                 procesamiento diferentes recibieran instrucciones distintas operando sobre los mismos
+                  datos. Esta clase de arquitectura ha sido clasificada por numerosos arquitectos de 
+                  computadores como impracticable o imposible, y en estos momentos no existen ejemplos
+                   que funcionen siguiendo este modelo.
+            
+            </p>
+
+            <p center><img src="../img/misd.png" height="300" width="400"></p>
+        </article>
+    </section>
+    
+    <section class="content price">
+    </section>
+    
+    <section class="content price">
+    </section>
+    
+    <section class="content price">
+    </section>
+</body>
+</html>

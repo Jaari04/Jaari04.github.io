@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Estructura de Registros</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">2.2 Estructura de Registros</h2>
+    </header>
+    <section class="content sau">
+        <h2 class="title">¿Qu&eacute; son los registros del CPU?</h2>
+
+        <p>
+            Se emplean para controlar las instrucciones en ejecuci&oacute;n, 
+            manejar direccionamiento de memoria y propiciar la capacidad aritm&eacute;tica. 
+            Los registros vienen de tres tipos: datos, direcciones e &iacute;ndice, que tiene 
+            lugar en casi todos los aspectos de la operaci&oacute;n del CPU. El tamaño de un 
+            registro depende del CPU; los m&aacute;s simples tienen registros que aceptan 8 o 
+            16 bits de datos y los m&aacute;s complejos tienen registros de 32, 48 o 64 bits.
+
+        </p>
+    </section>
+
+    <section class="content about">
+        <h2 class="title">Registro de datos</h2>
+
+        <p>
+            Un CPU puede funcionar con datos en uno de tres modos: entre dos registros, 
+            entre registros y una ubicaci&oacute;n de Memoria de acceso al azar 
+        (RAM - Random-Access Memory) y entre dos ubicaciones RAM. Como el CPU est&aacute; 
+        conectado directamente a los registros, las operaciones que implican dos registros 
+        son las m&aacute;s r&aacute;pidas; las que se dan entre ubicaciones RAM son las m&aacute;s 
+        lentas. Es decir, junta dos registros, añade un registro a una ubicaci&oacute;n RAM,
+        o añade dos ubicaciones RAM.
+
+        </p>
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title">Registro de direcciones</h2>
+
+            <p>
+                Para que un CPU pueda almacenar y recuperar datos en RAM, debe
+                 tener la direcci&oacute;n de la memoria de la informaci&oacute;n.
+                  Esas operaciones que implican RAM usan registros de direcci&oacute;n
+                   de memoria. EL CPU no realiza aritm&eacute;tica en estos registros;
+                    en cambio, los usa para ubicar datos que necesita.
+
+            </p>
+            <h2 class="title"> Registro de &iacute;ndice</h2>
+
+            <p>
+                Un CPU no puede hacer matem&aacute;ticas en registros de datos, aunque
+                 puede hacerlo indirectamente con un registro de &iacute;ndice. &eacute;ste 
+                 trabaja con los registros de datos, permitiendo a un programa procesar hilos
+                  de informaci&oacute;n eficazmente.
+
+            </p>
+
+        </article>    
+    </section>
+
+    <section class="content price"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <article class="contain">
+            <h2 class="title"> Registros de segmento</h2>
+
+            <p>
+                Un registro de segmento tiene 16 bits de longitud y facilita un &aacute;rea 
+                de memoria para direccionamiento conocida como segmento actual.
+
+
+            </p>
+            <h2 class="title"> Registro Cs</h2>
+
+            <p>
+                El dos almacena la direcci&oacute;n inicial del segmento de c&oacute;digo
+                 de un programa en el registro CS. Indica la direcci&oacute;n de una instrucci&oacute;n 
+                 que es buscada para su ejecuci&oacute;n.
+    
+            </p>
+
+            <h2 class="title">Registro Ds</h2>
+
+            <p>
+                genera una referencia a la localidad de un byte espec&iacute;fico en el
+             segmento de datos.
+    
+            </p>
+
+        </article>    
+    </section>
+
+    <section class="content contact">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">Registro SS</h2>
+
+        <p>
+            permite la colocaci&oacute;n en memoria de una pila, para almacenamiento 
+            temporal de direcci&oacute;n y datos.
+            
+        </p>
+    <h2 class="title">Registro ES</h2>
+
+    <p>
+        Se utiliza para algunas operaciones con cadenas de caracteres se utiliza para
+         el manejo de direccionamiento de memoria.
+
+    </p>
+    
+    <p center><img src="../img/regis.webp" height="300" width="400"></p>
+    </section>
+    <section class="content price"></section>
+    
+    <section class="content price"></section>
+
+</body>
+</html>

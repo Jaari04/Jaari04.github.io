@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Organizaci&oacute;n de direcciones de Memoria</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">4.2.3 Organizaci&oacute;n de direcciones de Memoria </h2>
+
+        <p>
+            Las distintas memorias presentes en un computador se organizan de forma jer&aacute;rquica: 
+            
+        </p>
+
+    
+    </header>
+
+    <section class="content sau">
+        <p center><img src="../img/uno.png" height="250" width="650"></p>
+
+        <p>
+            En el nivel i+1 se ubica una copia de aquellos bloques del nivel i 
+            que tienen mayor probabilidad 
+            de ser referenciados en el futuro inmediato 
+        </p>
+
+        <p center><img src="../img/dos.png" height="150" width="400"></p>
+    </section>
+    <section class="content about">
+        <br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+
+        <p>
+            Este mecanismo de migraci&oacute;n entre niveles es efectivo gracias al 
+            principio de localidad 
+            referencial que manifiestan los programas:</p>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+
+                    <p>Espacial</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+
+                    <p>Temporal</p>
+
+                </div>
+            </div>
+
+            <p>
+                Se consigue que el mayor n&uacute;mero de referencias generado por los programas 
+                correspondan a 
+                informaciones ubicadas en los niveles m&aacute;s altos de la jerarqu&iacute;a. 
+            </p>
+    </section>
+    <section class="content price">
+        
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <article class="contain">
+            <h2 class="title">Organizaci&oacute;n interna de la memoria principal.</h2>
+
+            <p>
+                Una memoria principal se compone de un conjunto de celdas b&aacute;sicas dotadas de una 
+            determinada organizaci&oacute;n. Cada celda soporta un bit de informaci&oacute;n. Los bits 
+            se agrupan en unidades 
+            direccionables denominadas palabras. La longitud de palabra la determina el n&uacute;mero de
+             bits que la 
+            componen y constituye la resoluci&oacute;n de la memoria (m&iacute;nima cantidad de
+             informaci&oacute;n direccionable). 
+            La longitud de palabra suele oscilar desde 8 bits (byte) hasta 64 bits. 
+            Cada celda b&aacute;sica es un dispositivo f&iacute;sico con dos estados estables 
+            (o semi-estables) con 
+            capacidad para cambiar el estado (escritura) y determinar su valor (lectura). Aunque 
+            en los primeros 
+            computadores se utilizaron los materiales magn&eacute;ticos como soporte de las celdas 
+            de memoria principal 
+            (memorias de ferritas, de pel&iacute;cula delgada, etc.) en la actualidad s&oacute;lo se 
+            utilizan los materiales 
+            semiconductores.
+            </p>
+
+        </article>    
+    </section>
+    <section class="content price">
+        
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <article class="contain">
+            <p>
+                Dentro de las memorias electr&oacute;nicas de semiconductor podemos 
+                distinguir dos grandes grupos: 
+                las est&aacute;ticas (SRAM: Static Random Access Memory) y las din&aacute;micas 
+                (DRAM: Dynamic Random 
+                Access Memory). Las est&aacute;ticas utilizan el principio de biestabilidad que 
+                se consigue con dos puertas 
+                inversoras (NAND &oacute; NOR) realimentadas, mientras que las din&aacute;micas 
+                aprovechan la carga o ausencia 
+                de carga de un pequeño condensador creado en un material semiconductor. Debido 
+                a la descarga 
+                natural que sufren las celdas cargadas, las memorias din&aacute;micas necesitan
+                 un sistema de refresco que 
+                peri&oacute;dicamente - y antes que la carga el&eacute;ctrica del condensador se 
+                haga indetectable - recargue las 
+                celdas que se encuentran en estado de carga. 
+                Desde un punto de vista conceptual y con independencia de la tecnolog&iacute;a,
+                 consideraremos la 
+                celda b&aacute;sica de memoria como un bloque con tres l&iacute;neas de entrada 
+                (entrada dato, selecci&oacute;n y 
+                lectura/escritura) y una de salida (salida dato). La celda s&oacute;lo opera 
+                (lectura &oacute; escritura) cuando la 
+                selecci&oacute;n est&aacute; activa. 
+            </p>
+        </article>
+    </section>
+
+    <section class="content contact">
+        <h2 class="title">Organizaci&oacute;n interna de la memoria.</h2>
+
+        <p> Las celdas de memoria se disponen en el interior de un chip atendiendo a dos organizaciones 
+            principales: la organizaci&oacute;n por palabras, tambi&eacute;n denominada 2D, 
+            y la organizaci&oacute;n por bits, tambi&eacute;n 
+            denominada 2 ½ D o 3D.</p>
+    </section>
+</body>
+</html>

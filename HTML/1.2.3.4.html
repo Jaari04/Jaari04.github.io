@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Acceso Directo a Memoria</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">1.2.3.4 Acceso Directo a Memoria</h2>
+
+        <p>
+            Las t&eacute;cnicas de E/S que hemos visto hasta ahora requieren
+             una dedicaci&oacute;n importante del procesador (ejecutar un fragmento de
+              c&oacute;digo) para hacer simples transferencias de datos. Si queremos 
+              transferir bloques de datos, estas t&eacute;cnicas todav&iacute;a ponen m&aacute;s 
+              en evidencia la ineficiencia que tienen. En E/S programada implica que el procesador
+               no pueda hacer nada m&aacute;s y en E/S por interrupciones descargamos el 
+               procesador de la sincronizaci&oacute;n a costa de hacer las rutinas de 
+               atenci&oacute;n m&aacute;s largas para garantizar el estado del procesador,
+                lo que limita la velocidad de transferencia.
+        </p>
+
+    </header>
+    
+    
+    <section class="content sau">
+
+        <p>
+            En este apartado describiremos una t&eacute;cnica mucho m&aacute;s eficiente
+             para transferir bloques de datos, el acceso directo a memoria (DMA). En esta
+              t&eacute;cnica el procesador programa la transferencia de un bloque de datos
+               entre el perif&eacute;rico y la memoria encargando a un nuevo elemento 
+               conectado al bus del sistema hacer toda la transferencia. Una vez acabada,
+                este nuevo elemento avisa el procesador. De esta manera, el procesador puede 
+                dedicar todo el tiempo que dura la transferencia del bloque a otras tareas. 
+                Este nuevo elemento que gestiona toda la transferencia de datos entre el
+                 perif&eacute;rico y la memoria principal lo denominamos m&oacute;dulo o 
+                 controlador de DMA o tambi&eacute;n en versiones m&aacute;s evolucionadas
+                  canal o procesador de E/S.
+        </p>
+    </section>
+
+    <section class="content about">
+
+        <p>Utilizando la t&eacute;cnica de E/S por DMA se descarga al procesador de la
+             responsabilidad de llevar a cabo la sincronizaci&oacute;n y el intercambio de 
+             datos entre el perif&eacute;rico y la memoria.
+        </p>
+
+    </section>
+    
+    <section class="content price">
+        <article class="contain">
+
+            <p>
+                Por otra parte, nos aparece una nueva problem&aacute;tica en el computador, 
+                ya que hay dos dispositivos –el procesador y el controlador de DMA– que tienen
+                 que acceder de manera concurrente a la memoria y hay que establecer un mecanismo
+                  para resolver este conflicto.
+           
+            </p>
+
+            <p center><img src="../img/acceso.jpg" height="300" width="500"></p>
+        </article>    
+    </section>
+    
+    <section class="content price">
+    </section>
+
+</body>
+</html>

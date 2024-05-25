@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>ALU</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header"><br><br><br><br><br><br><br>
+        <h2 class="title">1.2.1.2 Unidad Aritm&eacute;tica L&oacute;gica</h2>
+
+        <p>
+            
+            la unidad aritm&eacute;tica l&oacute;gica o unidad aritm&eacute;tico-l&oacute;gica, 
+            tambi&eacute;n conocida como ALU (siglas en ingl&eacute;s de arithmetic logic unit), 
+            es un circuito digital que realiza operaciones aritm&eacute;ticas (suma, resta) y 
+            operaciones l&oacute;gicas (SI, Y, O, NO) entre los valores de los argumentos (uno o dos)
+
+        </p>
+
+        <p>
+            Por mucho, los circuitos electr&oacute;nicos m&aacute;s complejos son los que est&aacute;n 
+            construidos dentro de los chips de microprocesadores modernos. Por lo tanto, estos 
+            procesadores tienen dentro de ellos un ALU muy complejo y potente. De hecho, un microprocesador 
+            moderno (y los mainframes) puede tener m&uacute;ltiples n&uacute;cleos, cada n&uacute;cleo 
+            con m&uacute;ltiples unidades de ejecuci&oacute;n, cada una de ellas con m&uacute;ltiples ALU.
+        </p>
+
+       
+    </header>
+    <section class="content sau">
+    </section>
+    
+    <section class="content sau">
+       
+
+        <p>
+            Muchos otros circuitos pueden contener en el interior una unidad aritm&eacute;tico l&oacute;gica: 
+            unidades de procesamiento gr&aacute;fico como las que est&aacute;n en las GPU modernas, FPU como 
+            el viejo coprocesador matem&aacute;tico 80387, y procesadores digitales de señales como los que 
+            se encuentran en tarjetas de sonido, lectoras de CD y los televisores de alta definici&oacute;n. 
+            Todos estos tienen en su interior varias ALU potentes y complejas.</p>
+            `
+            <p>
+                En la imagen se detalla una ALU de 2 bits con dos entradas (operandos) llamadas A y B: 
+                A[0] y B[0] corresponden al bit menos significativo y A[1] y B[1] corresponden al bit 
+                m&aacute;s significativo.
+
+            </p>
+
+            <p>
+                Cada bit de la ALU se procesa de manera id&eacute;ntica, con la excepci&oacute;n del 
+                direccionamiento del bit del acarreo. El manejo de este bit es explicado m&aacute;s adelante.
+
+            </p>
+            
+            <p>
+                Las entradas A y B van hacia las cuatro puertas de la derecha, de arriba abajo, XOR, 
+                AND, OR. Las tres primeras puertas realizan las operaciones XOR, AND, y OR sobre los 
+                datos A y B. La &uacute;ltima puerta XOR es la puerta inicial de un sumador completo.
+
+            </p>
+
+            <p>
+                El paso final de las operaciones sobre cada bit es la multiplexaci&oacute;n de los 
+                datos. La entrada OP de 3 bits, OP[0], OP[1] y OP[2] (desde la unidad de control) 
+                determina cual de las funciones se van a realizar:
+ 
+            </p>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>OP = 000 → XOR</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>OP = 001 → AND</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>OP = 010 → OR</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>OP = 011 → Adici&oacute;n</p>
+
+                </div>
+            </div>
+    </section>
+    
+    <section class="content sau">
+    </section>
+
+    <section class="content price">
+        <br><br><br><br><br><br><br><br><br>
+        <article class="contain">
+           
+
+            <p>Claramente se ve que las otras cuatro entradas del multiplexor est&aacute;n 
+                libres para otras operaciones (sustracci&oacute;n, multiplicaci&oacute;n, 
+                divisi&oacute;n, NOT A, NOT B, etc). Aunque OP[2] actualmente no es usada 
+                en este montaje (a pesar de estar incluida y conectada), &eacute;sta ser&iacute;a 
+                usada en el momento de realizar otras operaciones adem&aacute;s de las 4
+                 operaciones listadas arriba.
+            </p>
+            <p>
+                Los datos de acarreo de entrada y acarreo de salida, llamados flags 
+                (banderas), son t&iacute;picamente conectados a alg&uacute;n tipo de registro de estado.
+            </p>
+
+
+            <p center><img src="../img/alu.png" height="370" width="600"></p>
+        </article>    
+    </section>
+    <section class="content price">
+    </section>
+
+</body>
+</html>

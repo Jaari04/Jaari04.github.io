@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Mediante Interrupciones</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">1.2.3.3 Mediante Interrupciones</h2>
+    </header>
+
+    <section class="content sau">
+
+        <p>Usando la t&eacute;cnica de E/S por interrupciones la sincronizaci&oacute;n 
+            entre el perif&eacute;rico y el procesador es llevada a cabo por el m&oacute;dulo
+             de E/S, de forma que se descarga al procesador de esta responsabilidad.
+        </p>
+        <p>Para utilizar esta t&eacute;cnica de E/S en un computador, es necesario considerar
+             tanto aspectos del software como del hardware.
+        </p>
+    </section>
+
+    <section class="content about">
+
+        <p>Como parte del hardware, es necesario que el computador disponga de una l&iacute;nea 
+            especial que tiene que formar parte del conjunto de l&iacute;neas de control del bus
+             del sistema y que denominamos l&iacute;nea de petici&oacute;n de 
+             interrupci&oacute;n (INT). El m&oacute;dulo de E/S avisa al procesador mediante 
+             esta l&iacute;nea e indica que est&aacute; preparado para hacer la transferencia.
+              La señal INT la activa el m&oacute;dulo de E/S y la recibe el procesador. 
+              Es una señal activa a la baja. El procesador debe tener un punto de conexi&oacute;n 
+              de entrada por donde llegar&aacute;n las interrupciones y el m&oacute;dulo de E/S debe
+               tener un punto de conexi&oacute;n de salida por donde generar&aacute; las interrupciones.
+                Para hacer una operaci&oacute;n de E/S utilizando esta t&eacute;cnica se siguen los mismos
+                 pasos que en la E/S programada: se programa la operaci&oacute;n de E/S, se realiza 
+                 la transferencia de datos y se finaliza la operaci&oacute;n de E/S. La diferencia
+                  principal la tenemos durante la transferencia de datos, en la que en la fase de 
+                  sincronizaci&oacute;n debemos hacer la gesti&oacute;n de las interrupciones
+                   y eso tambi&eacute;n afecta en cierta medida al intercambio de datos, como
+                    veremos m&aacute;s adelante.
+        </p>
+
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+            <p> Durante la fase de sincronizaci&oacute;n, una vez hecha la programaci&oacute;n 
+                de la operaci&oacute;n de E/S, el procesador ejecuta otro programa (seg&uacute;n la
+                 pol&iacute;tica de gesti&oacute;n de procesos del sistema operativo) de manera 
+                 que el procesador estar&aacute; ocupado haciendo trabajo productivo hasta que 
+                 el m&oacute;dulo de E/S est&eacute; preparado y active la señal de petici&oacute;n 
+                 de interrupci&oacute;n (INT).
+            </p>
+
+            <p>De entrada, el procesador no sabe en qu&eacute; momento se producir&aacute; 
+                esta petici&oacute;n; por lo tanto, ha de comprobar peri&oacute;dicamente 
+                si el m&oacute;dulo de E/S pide la atenci&oacute;n del procesador, sin que ello 
+                afecte a la dedicaci&oacute;n que tiene. Esta comprobaci&oacute;n el procesador
+                 la hace dentro del ciclo de ejecuci&oacute;n de cada instrucci&oacute;n. 
+                 Es una operaci&oacute;n muy r&aacute;pida que incluso se puede encabalgar 
+                 con el comienzo de la lectura de la instrucci&oacute;n siguiente para que no
+                  afecte al rendimiento del procesador. Los procesadores que han de gestionar
+                 interrupciones deben tener en el ciclo de ejecuci&oacute;n de instrucci&oacute;n una 
+                 fase de comprobaci&oacute;n de interrupciones.
+            </p>
+            <p>En el momento en el que el procesador reconoce que ha llegado una petici&oacute;n 
+                de interrupci&oacute;n, empieza un ciclo de reconocimiento de interrupci&oacute;n 
+                para detener la ejecuci&oacute;n del programa actual y transferir el control a la
+                 rutina de servicio de la interrupci&oacute;n (RSI), rutina que accede al m&oacute;dulo 
+                 de E/S correspondiente para llevar a cabo la transferencia de datos y, una vez se acabe
+                  la ejecuci&oacute;n de la RSI, continuar la ejecuci&oacute;n del programa que
+                   hab&iacute;amos detenido haciendo el retorno de interrupci&oacute;n.
+            </p>
+
+        </article>    
+    </section>
+    
+    <section class="content price"></section>
+    
+</body>
+</html>

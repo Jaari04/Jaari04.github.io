@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Tipos de Computaci&oacute;n Paralela</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">4.2 Tipos de Computaci&oacute;n Paralela</h2>
+
+        <p>
+            
+            Desde el advenimiento de la integraci&oacute;n a gran escala (VLSI) como 
+            tecnolog&iacute;a de fabricaci&oacute;n de chips de computadora en la d&eacute;cada 
+            de 1970 hasta alrededor de 1986, la aceleraci&oacute;n en la arquitectura de computadores
+             se lograba en gran medida duplicando el tamaño de la palabra en la computadora, la
+              cantidad de informaci&oacute;n que el procesador puede manejar por ciclo. 
+        </p>
+
+        <p>
+            El aumento del tamaño de la palabra reduce el n&uacute;mero de instrucciones que el
+             procesador debe ejecutar para realizar una operaci&oacute;n en variables cuyos tamaños
+              son mayores que la longitud de la palabra. Por ejemplo, cuando un procesador de 8 bits
+               debe sumar dos enteros de 16 bits, el procesador primero debe adicionar los 8 bits de
+                orden inferior de cada n&uacute;mero entero con la instrucci&oacute;n de adici&oacute;n,
+                 a continuaci&oacute;n, añadir los 8 bits de orden superior utilizando la 
+                 instrucci&oacute;n de adici&oacute;n con acarreo que tiene en cuenta el bit de acarreo 
+                 de la adici&oacute;n de orden inferior, en este caso un procesador de 8 bits requiere 
+                 dos instrucciones para completar una sola operaci&oacute;n, en donde un procesador de 
+                 16 bits necesita una sola instrucci&oacute;n para poder completarla.
+
+        </p>
+
+        <p>
+            Hist&oacute;ricamente, los microprocesadores de 4 bits fueron sustituidos por
+             unos de 8 bits, luego de 16 bits y 32 bits, esta tendencia general lleg&oacute; 
+             a su fin con la introducci&oacute;n de procesadores de 64 bits, lo que ha sido un
+              est&aacute;ndar en la computaci&oacute;n de prop&oacute;sito general durante la 
+              &uacute;ltima d&eacute;cada.
+
+        </p>
+    </header>
+
+    <section class="content sau">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">Paralelismo a nivel de instrucci&oacute;n</h2>
+
+        <p>            
+            Un programa de ordenador es, en esencia, una secuencia de instrucciones ejecutadas 
+            por un procesador. Estas instrucciones pueden reordenarse y combinarse en grupos que
+             luego son ejecutadas en paralelo sin cambiar el resultado del programa. Esto se conoce
+              como paralelismo a nivel de instrucci&oacute;n. Los avances en el paralelismo a nivel 
+              de instrucci&oacute;n dominaron la arquitectura de computadores desde mediados de 1980 
+              hasta mediados de la d&eacute;cada de 1990.
+        </p>
+
+        <p>
+            Los procesadores modernos tienen ''pipeline'' de instrucciones de varias etapas. Cada etapa en
+             el pipeline corresponde a una acci&oacute;n diferente que el procesador realiza en la 
+             instrucci&oacute;n correspondiente a la etapa; un procesador con un pipelinede N etapas
+              puede tener hasta n instrucciones diferentes en diferentes etapas de finalizaci&oacute;n. 
+              El ejemplo can&oacute;nico de un procesador segmentado es un procesador RISC, con cinco etapas:
+               pedir instrucci&oacute;n, decodificar, ejecutar, acceso a la memoria y escritura. El 
+               procesador Pentium 4 ten&iacute;a un pipeline de 35 etapas.
+
+        </p>
+
+        <p>
+            Adem&aacute;s del paralelismo a nivel de instrucci&oacute;n del pipelining, algunos procesadores
+             pueden ejecutar m&aacute;s de una instrucci&oacute;n a la vez. Estos son conocidos como 
+             procesadores superescalares. Las instrucciones pueden agruparse juntas s&oacute;lo si no hay
+              dependencia de datos entre ellas. El scoreboarding y el algoritmo de Tomasulo —que es 
+              similar a scoreboarding pero hace uso del renombre de registros— son dos de las 
+              t&eacute;cnicas m&aacute;s comunes para implementar la ejecuci&oacute;n fuera de orden y
+               la paralelizaci&oacute;n a nivel de instrucci&oacute;n.
+    
+        </p>
+
+        <p>
+            Un pipeline can&oacute;nico de cinco etapas en una m&aacute;quina RISC (IF = Pedido de
+             Instrucci&oacute;n, ID = Decodificaci&oacute;n de instrucci&oacute;n, EX = Ejecutar, MEM =
+              Acceso a la memoria, WB = Escritura).
+
+        </p>
+
+    </section>
+
+    
+    <section class="content about">
+        <br><br><br><b><br><br><br><br><br><br><br><br><br><br><br></b><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><b>
+            <br><br><br><br><br><br><br><br><br><br><br>
+        </b>
+        <h2 class="title">Paralelismo de datos</h2>
+
+        <p>
+            El paralelismo de datos es el paralelismo inherente en programas con ciclos, que se 
+            centra en la distribuci&oacute;n de los datos entre los diferentes nodos computacionales
+             que deben tratarse en paralelo. La paralelizaci&oacute;n de ciclos conduce a menudo a 
+             secuencias similares de operaciones —no necesariamente id&eacute;nticas— o funciones que
+              se realizan en los elementos de una gran estructura de datos. Muchas de las aplicaciones
+               cient&iacute;ficas y de ingenier&iacute;a muestran paralelismo de datos.
+
+        </p>
+
+    <p>
+        Una dependencia de terminaci&oacute;n de ciclo es la dependencia de una iteraci&oacute;n de 
+        un ciclo en la salida de una o m&aacute;s iteraciones anteriores. Las dependencias de 
+        terminaci&oacute;n de ciclo evitan la paralelizaci&oacute;n de ciclos.
+            
+    </p>
+
+    <p>
+        Un procesador superescalar con pipeline de cinco etapas, capaz de ejecutar dos instrucciones
+         por ciclo. Puede tener dos instrucciones en cada etapa del pipeline, para un total de hasta
+          10 instrucciones (se muestra en verde) ejecutadas simult&aacute;neamente.
+
+    </p>
+
+    </section>
+
+    <section class="content price"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br>
+        <article class="contain">
+            <h2 class="title">Paralelismo de tareas</h2>
+
+            <p>
+                El paralelismo de tareas es la caracter&iacute;stica de un programa paralelo en la 
+                que c&aacute;lculos completamente diferentes se pueden realizar en cualquier conjunto
+                 igual o diferente de datos. Esto contrasta con el paralelismo de datos, donde se realiza
+                  el mismo c&aacute;lculo en distintos o mismos grupos de datos. El paralelismo de tareas
+                   por lo general no escala con el tamaño de un problema.
+            
+            </p>
+
+            <p center><img src="../img/paralelismo.png" height="300" width="1400"></p>
+        </article>    
+    </section>
+    
+    <section class="content price">
+    </section>
+    <section class="content price">
+    </section>
+    <section class="content price">
+        
+    </section>
+    <section class="content price">
+    </section>
+    <section class="content price">
+    </section>
+    <section class="content price">
+    </section>
+    <section class="content price">
+        
+    </section>
+    <section class="content price">
+    </section>
+
+</body>
+</html>

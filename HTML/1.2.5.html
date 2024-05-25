@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title> Interupciones</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">1.2.5   Interupciones</h2>
+
+        <p>
+            En el contexto de la inform&aacute;tica, una interrupci&oacute;n 
+            (del ingl&eacute;s interrupt request, en español «petici&oacute;n de interrupci&oacute;n»)
+             es una señal recibida por el procesador de una computadora, que indica que debe
+              «interrumpir» el curso de ejecuci&oacute;n actual y pasar a ejecutar c&oacute;digo 
+              espec&iacute;fico para tratar esta situaci&oacute;n.
+
+        </p>
+
+    
+    </header>
+    
+    <section class="content sau">
+    
+
+        <p>           
+            Una interrupci&oacute;n es una suspensi&oacute;n temporal de 
+            la ejecuci&oacute;n de un proceso, para pasar a ejecutar una subrutina de servicio 
+            de interrupci&oacute;n, la cual, por lo general, no forma parte del programa, sino 
+            que pertenece al sistema operativo o al BIOS. Una vez finalizada dicha subrutina, 
+            se reanuda la ejecuci&oacute;n del programa.
+        </p>
+    </section>
+
+    <section class="content about">
+
+        <p>           
+            Las interrupciones son generadas por los dispositivos perif&eacute;ricos
+             habilitando una señal del CPU (llamada IRQ del ingl&eacute;s "interrupt request") 
+             para solicitar atenci&oacute;n del mismo. Por ejemplo. cuando un disco duro completa
+              una lectura solicita atenci&oacute;n al igual que cada vez que se presiona una tecla
+               o se mueve el rat&oacute;n.
+        </p>
+
+            
+        </section>
+
+        <section class="content price">
+            <article class="contain">
+    
+                <p>            
+                    La primera t&eacute;cnica que se emple&oacute; para esto
+                     fue el polling, que consist&iacute;a en que el propio procesador 
+                     se encargara de sondear los dispositivos perif&eacute;ricos cada 
+                     cierto tiempo para averiguar si ten&iacute;a pendiente alguna 
+                     comunicaci&oacute;n para &eacute;l. Este m&eacute;todo presentaba 
+                     el inconveniente de ser muy ineficiente, ya que el procesador 
+                     consum&iacute;a constantemente tiempo y recursos en realizar estas 
+                     instrucciones de sondeo.
+                </p>
+    
+                    
+            </article>    
+        </section>
+
+        <section class="content contact">
+            <br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <h2 class="title">Funcionamiento del mecanismo de interrupciones</h2>
+    <p>
+        Todos los dispositivos que deseen comunicarse con el procesador por medio de
+          interrupciones deben tener asignada una l&iacute;nea &uacute;nica capaz de avisar al CPU cuando 
+          le requiere para realizar una operaci&oacute;n. Esta l&iacute;nea se denomina IRQ.
+
+    </p>
+    <p>
+        Las IRQ son l&iacute;neas que llegan al controlador de interrupciones, un componente de
+         hardware dedicado a la gesti&oacute;n de las interrupciones, y que puede estar integrado
+          en el procesador principal o ser un circuito separado conectado al mismo. El controlador de 
+          interrupciones debe ser capaz de habilitar o inhibir las l&iacute;neas de interrupci&oacute;n
+           y establecer prioridades entre las mismas. Cuando varias l&iacute;neas de petici&oacute;n de
+            interrupci&oacute;n se activan a la vez, el controlador de interrupciones utilizar&aacute; 
+            estas prioridades para escoger la interrupci&oacute;n sobre la que informar&aacute; al 
+            procesador principal. Tambi&eacute;n puede darse el caso de que una rutina de tratamiento 
+            de interrupci&oacute;n sea interrumpida para realizar otra rutina de tratamiento de 
+            una interrupci&oacute;n de mayor prioridad a la que se estaba ejecutando; aunque hay 
+            interrupciones que no se pueden deshabilitar (conocidas como interrupciones no enmascarables
+             o NMI).
+
+    </p>
+    <p>
+
+        Un procesador principal que no tenga un controlador de interrupciones integrado, suele 
+        tener una &uacute;nica l&iacute;nea de interrupci&oacute;n llamada habitualmente INT. Esta
+         l&iacute;nea es activada por el controlador de interrupciones cuando tiene una interrupci&oacute;n 
+         que servir. Al activarse esta l&iacute;nea, el procesador consulta los registros del controlador 
+         de interrupciones para averiguar cual IRQ hay que atender. A partir del n&uacute;mero del IRQ busca
+          en la tabla de vectores de interrupci&oacute;n la direcci&oacute;n de la rutina a la que debe 
+          llamar para atender la petici&oacute;n del dispositivo asociado a dicha IRQ.
+            
+
+    </p>
+
+    
+    <p center><img src="../img/interrupcion.jpg" height="300" width="500"></p>
+        </section>
+        
+        
+        <section class="content price"></section>
+        <section class="content price"></section>
+        <section class="content price"></section>
+
+</body>
+</html>

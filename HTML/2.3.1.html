@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Ciclo Fetch: Disable-Ejecute</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">2.3.1 Ciclo Fetch: Disable-Ejecute</h2>
+
+        <p>
+           
+            Buscar la instrucci&oacute;n en la memoria principal.
+        </p>
+
+    </header>
+
+    <section class="content sau">
+
+        <p>
+            Se vuelca el valor del contador de programa sobre el bus de direcciones.
+            Entonces la CPU pasa la instrucci&oacute;n de la memoria principal a trav&eacute;s del
+             bus de datos al Registro de Datos de Memoria (MDR).
+            A continuaci&oacute;n el valor del MDR es colocado en el Registro de Instrucci&oacute;n 
+            Actual (CIR), un circuito que guarda la instrucci&oacute;n temporalmente de manera que pueda 
+            ser decodificada y ejecutada.
+
+        </p>
+    </section>
+
+    
+    <section class="content about">
+        <h2 class="title">Decodificar la instrucci&oacute;n.</h2>
+
+        <p>
+            El decodificador de instrucci&oacute;n interpreta e implementa la instrucci&oacute;n.
+            El registro de instrucci&oacute;n (IR) mantiene la instrucci&oacute;n en curso mientras 
+            el contador de programa (PC, program counter) guarda la direcci&oacute;n de memoria de la
+             siguiente instrucci&oacute;n a ser ejecutada.
+            Recogida de datos desde la memoria principal.
+            Tambi&eacute;n se lee la direcci&oacute;n efectiva de la memoria principal si la 
+            instrucci&oacute;n tiene una direcci&oacute;n indirecta, y se recogen los datos requeridos
+             de la memoria principal para ser procesados y colocados en los registros de datos.
+
+        </p>
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title">Ejecutar la instrucci&oacute;n.</h2>
+
+            <p>
+                A partir del registro de instrucci&oacute;n, los datos que forman la 
+                instrucci&oacute;n son decodificados por la unidad de control.
+                &eacute;sta interpreta la informaci&oacute;n como una secuencia de señales 
+                de control que son enviadas a las unidades funcionales relevantes de la CPU 
+                para realizar la operaci&oacute;n requerida por la instrucci&oacute;n.
+    
+            </p>
+        </article>    
+    </section>
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title">Almacenar o guardar resultados.</h2>
+
+            <p>
+                El resultado generado por la operaci&oacute;n es almacenado en la memoria
+                 principal o enviado a un dispositivo de salida dependiendo de la instrucci&oacute;n.
+                Bas&aacute;ndose en los resultados de la operaci&oacute;n, el contador de programa 
+                se incrementa para apuntar a la siguiente instrucci&oacute;n o se actualiza con 
+                una direcci&oacute;n diferente donde la pr&oacute;xima instrucci&oacute;n ser&aacute; 
+            recogida.
+    
+            </p>
+
+        </article>    
+    </section>
+    
+    <section class="content contact">
+        <h2 class="title">Ciclo de b&uacute;squeda.</h2>
+
+        <p>
+            Los pasos 1 y 2 del ciclo de instrucci&oacute;n se conocen como ciclo
+             de b&uacute;squeda (fetch). Estos pasos son id&eacute;nticos en todas las instrucciones.
+            El ciclo de b&uacute;squeda procesa la instrucci&oacute;n a partir de 
+            la palabra de instrucci&oacute;n, que contiene el c&oacute;digo de 
+            operaci&oacute;n y el operando.
+
+        </p>
+    </section>
+</body>
+</html>

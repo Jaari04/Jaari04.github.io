@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>M&eacute;todos de direccionamiento</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">2.3.4 M&eacute;todos de direccionamiento</h2>
+
+        <p>
+            Son las diferentes maneras de especificar un operando dentro de una 
+            instrucci&oacute;n. Un modo de direccionamiento especifica la forma 
+            de calcular la direcci&oacute;n de memoria efectiva de un operando mediante
+             el uso de la informaci&oacute;n contenida en registros dentro de una instrucci&oacute;n
+              de la m&aacute;quina.
+
+        </p>
+
+    </header>
+
+    
+    <section class="content sau">
+        <h2 class="title">Direccionamiento impl&iacute;cito</h2>
+
+        <p>
+            Depende solamente de la instrucci&oacute;n, es decir, la instrucci&oacute;n no
+             lleva par&aacute;metros. Particularmente en instrucciones que no accesan memoria,
+              o bien que tienen una forma espec&iacute;fica de accesarla.
+
+            Ejemplos: PUSHF, POPF, NOP
+        </p>
+    </section>
+
+    <section class="content about">
+        <h2 class="title">Modo registro</h2>
+
+        <p>Usa solamente registros como operandos. Es el m&aacute;s r&aacute;pido,
+             pues minimiza los recursos necesarios (toda la informaci&oacute;n fluye
+              dentro del EU del CPU)
+
+            Ejemplo: MOV AX, BX</p>
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title">Modo inmediato</h2>
+
+            <p>Tiene dos operandos: un registro y una constante que se usa por su valor. 
+                El valor constante no se tiene que buscar en memoria, pues ya se obtuvo al 
+                hacer el “fetch” de la instrucci&oacute;n.
+
+                Ejemplo: MOV AH, 9</p>
+
+        </article>    
+    </section>
+    
+    <section class="content contact">
+        <h2 class="title">Modo directo</h2>
+
+        <p>
+            Uno de los operandos involucra una localidad espec&iacute;fica de memoria 
+            El valor constante se tiene que buscar en memoria, en la localidad especificada. 
+            Es m&aacute;s lento que los anteriores, pero es el m&aacute;s r&aacute;pido para
+             ir a memoria, pues ya “sabe” la localidad, la toma de la instrucci&oacute;n y no 
+             la tiene que calcular.
+
+            Ejemplo: MOV AH, [0000] MOV AH, Variableft
+
+            Estas dos instrucciones ser&iacute;an equivalentes, si Variable est&aacute;,
+             por ejemplo, en la localidad 0 de memoria. En la forma primitiva del lenguaje 
+             de m&aacute;quina, como el primer ejemplo, se tiene que indicar “mover a AH el
+              contenido (indicado por los corchetes), de la localidad 0 de los datos (lo de los
+               datos es impl&iacute;cito). El lenguaje Ensamblador, sin embargo, nos permite la
+                abstracci&oacute;n del uso de variables, pero como una variable tiene una localidad
+                 determinada en memoria, para el procesador funciona igual. La &uacute;nica diferencia
+                  consiste en que el programador no tiene que preocuparse por la direcci&oacute;n, 
+                  ese manejo lo hace autom&aacute;ticamente el Ensamblador.
+
+        </p>
+    </section>
+
+    <section class="content price">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <article class="contain">
+            <h2 class="title">Modo indirecto</h2>
+
+            <p>Se usan los registros SI, DI como apuntadores.</p>
+
+            
+            <p center><img src="../img/tipos1.jpg" height="300" width="400"></p>
+        </article>    
+    </section>
+
+    
+    <section class="content price">
+    </section>
+</body>
+</html>

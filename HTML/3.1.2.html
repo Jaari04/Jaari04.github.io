@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Controlador de bus</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">3.1.2 Controlador de bus</h2>
+
+        <p>
+            Un controlador de bus proporciona un controlador de bus,
+             un adaptador o un puente (consulte la figura Capas de controladores posibles).
+              Microsoft proporciona controladores de bus para los buses m&aacute;s comunes,
+               como PCI, PnpISA, SCSI y USB. Otros controladores de bus pueden ser proporcionados
+                por IHV o OEM. Los controladores de bus son controladores necesarios; hay un 
+                controlador de bus para cada tipo de bus en una m&aacute;quina. Un controlador
+                 de bus puede proporcionar servicio a m&aacute;s de un bus si hay m&aacute;s
+                  de un bus del mismo tipo en la m&aacute;quina.
+
+        </p>
+    </header>
+
+    <section class="content sau">
+
+        <p>Las responsabilidades principales de un conductor de bus son:</p>
+
+            <div class="box-container">
+                
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>
+                        Enumerar los dispositivos en su bus.</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>Responda a Plug and Play IRP y a los IRP de 
+                        administraci&oacute;n de energ&iacute;a.</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p>
+                        Acceso multiplex al bus (para algunos buses).</p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+                    <p> Administre de forma gen&eacute;rica los dispositivos en su bus.</p>
+
+                </div>
+            </div>
+    </section>
+
+    <section class="content price">
+        <br><br><br><br><br>
+        <article class="contain">
+
+            <p>            
+                Los controladores de bus son esencialmente controladores de funci&oacute;n que
+                 tambi&eacute;n enumeran los elementos secundarios.
+            </p>
+
+            <p>
+                Durante la enumeraci&oacute;n, un controlador de bus identifica los 
+                dispositivos en su bus y crea objetos de dispositivo para ellos. 
+                Para obtener informaci&oacute;n sobre los objetos de dispositivo,
+                 vea Device Objects and Device Stacks(Objetos de dispositivo y pilas de dispositivos).
+                  El m&eacute;todo que usa un controlador de bus para identificar los dispositivos 
+                  conectados depende del bus concreto.
+
+            </p>
+
+
+            <p>
+                Un controlador de bus realiza determinadas operaciones en nombre de los 
+                dispositivos en su bus, incluido el acceso a los registros de dispositivos para
+                 cambiar f&iacute;sicamente el estado de energ&iacute;a de un dispositivo. Por ejemplo,
+                  cuando el dispositivo entra en suspensi&oacute;n, el controlador del bus establece los 
+                  registros de dispositivos para poner el dispositivo en el estado de alimentaci&oacute;n
+                   del dispositivo adecuado.
+            
+            </p>
+        </article>    
+    </section>
+    <section class="content contact">
+        <br><br>
+        <p center><img src="../img/controlador.jpg" height="300" width="400"></p>
+    </section>
+    
+</body>
+</html>

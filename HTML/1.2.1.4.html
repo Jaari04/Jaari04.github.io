@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Buses</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">1.2.1.4 Buses</h2>
+
+        <p>
+            Existen dos tipos primordiales de buses (conexiones) para el
+            env&iacute;o de la informaci&oacute;n: bus paralelo o serial.
+            Hay diferencias en el desempeño y hasta hace unos años se
+            consideraba que el uso apropiado depend&iacute;a de la longitud
+            f&iacute;sica de la conexi&oacute;n: para cortas distancias el bus paralelo,
+            para largas el serial.
+        </p>
+
+    </header>
+
+    
+    <section class="content sau">
+        <h2 class="title">Bus paralelo</h2>
+
+        <p>  Es un bus en el cual los datos son enviados por
+            bytes al mismo tiempo, con la ayuda de varias l&iacute;neas que
+            tienen funciones fijas. La cantidad de datos enviada es
+            bastante grande con una frecuencia moderada y es igual al
+            ancho de los datos por la frecuencia de funcionamiento. En
+            los computadores ha sido usado de manera intensiva, desde
+            el bus del procesador, los buses de discos duros, tarjetas de
+            expansi&oacute;n y de v&iacute;deo hasta las impresoras.</p>
+
+           
+    </section>
+
+    <section class="content about">
+        <h2 class="title">Bus serie</h2>
+
+        <p>En este los datos son enviados, bit a bit y se
+            reconstruyen por medio de registros o rutinas de software.
+            Est&aacute; formado por pocos conductores y su ancho de banda
+            depende de la frecuencia. Es usado desde hace menos de 10
+            años en buses para discos duros, tarjetas de expansi&oacute;n y para
+            el bus del procesador.</p>
+
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title">Buses del procesadror</h2>
+
+            <p>Bus de Direcciones: Es unidireccional debido a que la
+                informaci&oacute;n fluye es una solo sentido, del CPU a la memoria
+                &oacute; a los elementos de entrada y salida.
+                El CPU puede colocar niveles l&oacute;gicos en las n l&iacute;neas de
+                direcci&oacute;n, con la cual se genera 2n posibles direcciones
+                diferentes. Cada una de estas direcciones corresponde a una
+                localidad de la memoria &oacute; dispositivo de E / S.
+                El procesador env&iacute;a un c&oacute;digo de direcci&oacute;n a la memoria o a
+                otro dispositivo externo. El tamaño o anchura del bus de
+                direcciones est&aacute; especificado por el n&uacute;mero de hilos
+                conductores o pines.</p>
+
+            
+        </article>    
+    </section>
+
+    <section class="content contact">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">Bus de Datos</h2>
+
+        <p>Es bidireccional, pues los datos pueden fluir
+            hacia &oacute; desde el CPU.Las terminales pueden ser entradas &oacute;
+            salidas, seg&uacute;n la operaci&oacute;n que se este realizando ( lectura &oacute;
+            escritura ).En todos los casos, las palabras de datos
+            transmitidas tiene m bits de longitud debido a que el CPU
+            maneja palabras de datos de m bits; del n&uacute;mero de bits del
+            bus de datos, depende la clasificaci&oacute;n del procesador.En
+            algunos procesadores, el bus de datos se usa para transmitir
+            otra informaci&oacute;n adem&aacute;s de los datos.Es compartido en el
+            tiempo &oacute; multiplexado. Transfieren datos o c&oacute;digos de
+            instrucci&oacute;n hacia el procesador o se env&iacute;an hacia el exterior
+            los resultados de las operaciones o c&aacute;lculos.</p>
+
+            <p center><img src="../img/bdatos.png" height="370" width="600"></p>
+        
+    </section>
+
+    <section class="content sau">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">Bus de Control</h2>
+
+        <p>Este conjunto de señales se usa para
+            sincronizar las actividades y transacciones con los
+            perif&eacute;ricos del sistema. Algunas de estas señales, como
+            Lectura o Escritura R / W , son señales que el CPU env&iacute;a
+            para indicar que tipo de operaci&oacute;n se espera en ese momento.
+            Los perif&eacute;ricos tambi&eacute;n pueden remitir señales de control al
+            CPU, como son INT, RESET, BUS RQ.
+            Las señales m&aacute;s importantes en el bus de control son las
+            señales de cron&oacute;metro, que generan los intervalos de tiempo
+            durante los cuales se realizan las operaciones. Este tipo de
+            señales depende directamente del tipo del microprocesador.
+            El procesador para coordinar sus operaciones y para
+            comunicarse con los dispositivos externos. El bus de control
+            dispone de señales que permiten leer y escribir datos en
+            memoria o realizar una operaci&oacute;n de Entrada/Salida en el
+            instante adecuado.</p>
+    </section>
+
+    <section class="content about">
+        <h2 class="title">Tecnolog&iacute;a de buses</h2>
+
+        <p>
+            Un bus se puede definir como una l&iacute;nea de interconexi&oacute;n
+            portadora de informaci&oacute;n, constituida por varios hilos
+            conductores (en sentido f&iacute;sico) o varios canales (en sentido
+            de la l&oacute;gica), por cada una de las cuales se transporta un bit
+            de informaci&oacute;n. El n&uacute;mero de l&iacute;neas que forman los buses
+            (ancho del bus) es fundamental: Si un bus est&aacute; compuesto
+            por 16 l&iacute;neas, podr&aacute; enviar 16 bits al mismo tiempo.
+            Los buses conectan toda la circuiter&iacute;a interna. Es decir, los
+            distintos subsistemas del ordenador intercambian datos
+            gracias a los buses. Podemos clasificar a los buses, seg&uacute;n el
+            criterio de su situaci&oacute;n f&iacute;sica</p>
+
+    </section>
+
+    
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title">Bus Interno </h2>
+
+            <p>Este mueve datos entre los componentes
+                internos del microprocesador.</p>
+
+        </article>    
+    </section>
+
+    <section class="content contact">
+        <h2 class="title">Bus local</h2>
+
+        <p> De alta velocidad que conecta el procesador a la
+            cach&eacute;, el controlador de la cach&eacute; tambi&eacute;n puede acceder al
+            bus del sistema, con esta implementaci&oacute;n, la mayor parte de
+            los datos a los que va a acceder el procesador, que est&aacute;n en la
+            cach&eacute;, ser&aacute;n entregados a una alta velocidad, otro punto a
+            destacar de esta parte es que los accesos a memoria por parte
+            de la cach&eacute; no van a interrumpir el flujo de datos entre
+            procesador y cach&eacute;. Tambi&eacute;n se ve la posibilidad de
+            conectar un dispositivo de entrada salida al bus local.
+        </p>
+
+    </section>
+
+    <section class="content sau"><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">Bus del sistema </h2>
+
+        <p>En el est&aacute; conectada la memoria y por
+            debajo el bus de expansi&oacute;n, al cual se pueden conectar una
+            amplia diversidad de dispositivos, entre el bus del sistema y
+            el bus de expansi&oacute;n se encuentra una interface, que entre las
+            principales tareas est&aacute; la de adaptar las velocidades de
+            transmisi&oacute;n, por ejemplo para un dispositivo muy lento
+            conectado al bus de expansi&oacute;n la interface podr&iacute;a acumular
+            una cierta cantidad de datos y luego transmitirla a trav&eacute;s del
+            bus del sistema.</p>
+
+            <p center><img src="../img/bsistema.png" height="370" width="600"></p>
+          
+    </section>
+
+    <section class="content about">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">Bus de expansi&oacute;n, m&aacute;s lento conectado mediante otro
+            adaptador.</h2>
+
+        <p>Todas las partes del microprocesador est&aacute;n unidas mediante
+            diversas l&iacute;neas el&eacute;ctricas. El conjunto de estas l&iacute;neas se
+            denominan bus interno del microprocesador. Por este bus
+            interno circulan los datos (bus de datos), las señales de
+            control (bus de control) o las direcciones de memoria (bus de
+            direcciones). Cuando se habla de un microprocesador de 32
+            bits, el n&uacute;mero de l&iacute;neas del bus interno es de 32.</p>
+
+    </section>
+
+    <section class="content price"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
+        <article class="contain">
+            <h2 class="title">Bus Externo</h2>
+
+            <p>Este se utiliza para comunicar el procesador y
+                otras partes, como perif&eacute;ricos y memoria.</p>
+
+        </article>    
+    </section>
+    <section class="content contact">
+        <br><br><br><br><br><br><br>
+        <h2 class="title">Buses ISA (Industry Standard Arquitecture)</h2>
+
+        <p>Las primeras computadoras personales estaban equipadas
+            con ranuras de 8 bits, que para la velocidad de aquellos
+            procesadores eran suficiente. Actualmente son lentas para los
+            procesadores que existen.</p>
+
+    </section>
+
+    <section class="content sau">
+        <h2 class="title">Buses EISA(Extended Industry Standard Arquitecture)</h2>
+
+        <p>Arquitectura est&aacute;ndar industrial extendida. Tiene
+            caracter&iacute;sticas de la ISA en cuanto a su compatibilidad pero
+            con la velocidad de MCA es decir, 32 bits.</p>
+
+    </section>
+    <section class="content about">
+        <br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">Buses VESA(Video Electronic Standard Asociation)</h2>
+
+        <p>Son una extensi&oacute;n de ISA. Incluye toda la tecnolog&iacute;a de
+            EISA, funcionan al ritmo del procesador y permiten la
+            transferencia de datos sin necesidad de que estos intervengan
+            permitiendo procesos mucho m&aacute;s r&aacute;pidos y dejando mayor
+            tiempo libre al microprocesador central.</p>
+
+            <p center><img src="../img/bvesa.png" height="370" width="600"></p>
+    </section>
+    <section class="content price">
+        
+        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <article class="contain">
+            <h2 class="title">Buses PCI (Peripheral Component Interconect)</h2>
+
+            <p>L Interconexi&oacute;n a componentes perimetrales. Es de
+                caracter&iacute;sticas similares a VESA, pero se distingue porque la
+                conexi&oacute;n del bus con el microprocesador se efect&uacute;a por
+                intermedio de un chip adicional que simplifica y suprime las
+                limitaciones de la conexi&oacute;n directa.</p>
+        </article>    
+    </section>
+
+    <section class="content contact">
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        <h2 class="title">Bus AGP (Advanced Graphics Port)</h2>
+
+        <p>Puerto Avanzado de Gr&aacute;ficos. Se trata de un nuevo sistema
+            para conectar perif&eacute;ricos en la placa base de la computadora,
+            bus por el que van datos del procesador a los perif&eacute;ricos.
+            CardBus y PC Card (com&uacute;nmente PCMCIA)</p>
+
+            <p center><img src="../img/bagp.png" height="370" width="600"></p>
+    </section>
+
+    <section class="content sau"><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">Buses multiplexados b&aacute;sicos</h2>
+
+        <p>En las computadora, el microprocesador controla (y se
+            comunica con) las memorias y los dispositivos de
+            entrada/salida (E/S) a trav&eacute;s de la estructura de bus interna.
+            El bus est&aacute; multiplexado de manera que cualquiera de los
+            dispositivos que est&aacute;n conectados al mismo pueda enviar o
+            recibir datos hacia o desde los otros dispositivos.
+            Señales del bus. Utilizando la t&eacute;cnica de control s&iacute;ncrono del
+            bus, el microprocesador suele ser el encargado de generar
+            todas las señales de temporizaci&oacute;n y control. Entonces, los
+            otros dispositivos sincronizan sus operaciones con dichas
+            señales de control y temporizaci&oacute;n. Con la t&eacute;cnica de control
+            as&iacute;ncrono del bus, las señales de control y temporizaci&oacute;n son
+            generadas conjuntamente por un origen y destino.</p>
+
+    </section>
+    <section class="content price">
+    </section>
+    <section class="content price">
+    </section>
+    <section class="content price">
+    </section>
+
+</body>
+</html>

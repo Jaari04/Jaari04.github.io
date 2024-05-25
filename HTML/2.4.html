@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Casos y estudio</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <br><br><br><br><br><br><br><br><br>
+        <h2 class="title">2.4 Casos y estudio</h2>
+
+        <p>
+            I-8086
+            Los modos de direccionamiento del 8086 (Crawford & Gelsinger, 1987) son muy 
+            irregulares. Los registros del procesador, se usan para contener los datos con
+             que se est&aacute; trabajando puesto que el acceso a los registros es mucho 
+             m&aacute;s r&aacute;pido que los accesos a memoria. Se pueden realizar operaciones
+              aritm&eacute;ticas y l&oacute;gicas, comparaciones, entre otras.
+
+        </p>
+
+        <p>
+            Hay un campo para un registro (reg), que especiﬁca uno de los operandos, y 
+            otros dos campos (mod y r/m) para el otro.
+
+
+        </p>
+<p>
+    
+    Los modos del 8086 son indirectos por registro, indexados o directos por registro.
+
+</p>
+
+    </header>
+
+    <section class="content sau"><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <h2 class="title">Registros Prop&oacute;sito General</h2>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+
+                    <h3> Registro AX</h3>
+
+                    <p>El registro AX es el registro acumulador, es utilizado para operaciones
+                         que implican entrada/salida, y multiplicaci&oacute;n y divisi&oacute;n 
+                         (estas dos &uacute;ltimas en conjunto con el registro DX).
+                    </p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+
+                    <h3> Registro BX</h3>
+
+                    <p>El registro BX es el registro base, y es el &uacute;nico registro de
+                         prop&oacute;sito general que puede ser un &iacute;ndice para direccionamiento
+                          indexado.
+           
+                    </p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+
+                    <h3>Registro CX</h3>
+
+                    <p>El registro CX es conocido como el registro contador. Puede contener un
+                         valor para controlar el n&uacute;mero de veces que un ciclo se repite.
+           
+                    </p>
+
+                </div>
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+
+                    <h3> Registro DX</h3>
+
+                    <p>El registro DX es el registro de datos.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="content about">
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+            <br><br><br><br><br><br><br><br><br><br><br>
+
+            <h2 class="title">Registros &iacute;ndice</h2>
+    
+            <p> Registro SI: El registro &iacute;ndice fuente de 16 bits es requerido por
+                 algunas operaciones con cadenas de caracteres.
+            </p>
+    
+            <p> Registro DI: El registro &iacute;ndice destino tambi&eacute;n es requerido por
+                 algunas operaciones con cadenas de caracteres.
+
+            </p>
+    
+        </section>
+
+        <section class="content price">
+            
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+            <br><br><br><br><br><br><br><br><br><br><br>
+
+            <article class="contain">
+                <h2 class="title">Registros Apuntadores</h2>
+    
+                <p>Registro SP: Apuntador de pila de 16 bits proporciona un valor de 
+                    desplazamiento que se refiere a la palabra actual que est&aacute; siendo 
+                    procesada en la pila.
+                </p>
+    
+                <p> 
+                    Registro BP: El apuntador base de 16 bits facilita la referencia de 
+                    par&aacute;metros dentro de la pila.
+    
+                    </p>
+
+
+                    <p>
+                        Motorola 68000: El mismo direccionamiento lleva impl&iacute;cito el tipo de
+                         registro sobre el que trabaja (direcciones o datos). Est&aacute; basado en
+                          dos bancos de 8 registros de 32 bits. Un banco es de datos (Dn) y el otro
+                           de punteros (An). Adem&aacute;s, contiene un contador de programa de 32 
+                           bits y un registro de estado de 16 bits.
+
+                    </p>
+                    <p>
+                        80386: Para este microprocesador existe un modo nuevo que 
+                        requiere un byte adicional denominado SIB (escala, &iacute;ndice, base) 
+                        que se añade al byte de operandos, es &uacute;til para direccionar elementos
+                         de vectores de longitudes diferentes en bucles. Es una alternativa a los
+                          modos autoindexados que esta m&aacute;quina no soporta.
+           
+                    </p>
+
+            </article>    
+        </section>
+
+        <section class="content price">
+            <article class="contain">
+    
+                
+    
+            </article>    
+        </section>
+        <section class="content price">
+            <article class="contain">
+    
+                
+    
+            </article>    
+        </section>
+</body>
+</html>

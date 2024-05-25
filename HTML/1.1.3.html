@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Multiprocesamiento</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">1.1.3 Multiprocesamiento</h2>
+
+        <p>
+            Se denomina multiprocesador a un computador que cuenta
+            con dos o m&aacute;s microprocesadores (CPUs).
+            El multiprocesador puede ejecutar simult&aacute;neamente varios
+            hilos pertenecientes a un mismo proceso o bien a procesos
+            diferentes.
+            La arquitectura NUMA, donde cada procesador tiene acceso
+            y control exclusivo a una parte de la memoria.
+            La arquitectura SMP, donde todos los procesadores
+            comparten toda la memoria.
+            Para que un multiprocesador opere correctamente necesita
+            un sistema operativo especialmente diseñado para ello.
+            La mayor&iacute;a de los sistemas operativos actuales poseen esta
+            capacidad.
+        </p>
+
+        
+    </header>
+
+    <section class="content sau">
+
+        <p>
+            Cuando se desea incrementar el desempeño m&aacute;s de lo que
+            permite la t&eacute;cnica de segmentaci&oacute;n (pipeline), se requiere
+            utilizar m&aacute;s de un procesador para la ejecuci&oacute;n del programa
+            de aplicaci&oacute;n.
+            Los CPU de multiprocesamiento seg&uacute;n Flynn se clasifican
+            de la siguiente manera:
+        </p>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+
+                    <h3>SISO</h3>
+
+                    <p>(Single Instruction, Single Operand) computadoras
+                        Monoprocesador</p>
+
+                </div>
+
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+
+                    <h3>SIMO</h3>
+
+                    <p>(Single Instruction, Multiple Operand) procesadores
+                        vectoriales, Exenciones MMX</p>
+
+                </div>
+                
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+
+                    <h3>MISO</h3>
+
+                    <p>(Multiple Instruction, Single Operand) No
+                        implementado</p>
+
+                </div>
+
+                <div class="box">
+                    <i class="fab fa-angular"></i>
+
+                    <h3>MIMO</h3>
+
+                    <p>(Multiple Instruction, Multiple Operand) sistemas
+                        SMP, Clusters, GPUs</p>
+
+                </div>
+
+            </div>
+
+    </section>
+
+    <section class="content about">
+
+        <br><br><br><br><br><br><br><br>
+
+        <p>
+            Los procesadores vectoriales, son computadoras pensadas
+            para aplicar un mismo algoritmo num&eacute;rico a una serie de
+            datos matriciales, en especial en la simulaci&oacute;n de sistemas
+            f&iacute;sicos complejos, tales como simuladores de clima,
+            explosiones at&oacute;micas, reacciones qu&iacute;micas, etc.
+        </p>
+
+        <br><br><br><br><br><br>
+
+        <p>
+            Donde los datos son representados como grandes n&uacute;meros de
+            datos en forma matricial sobre los que se deben se aplicar el
+            mismo algoritmo num&eacute;rico.
+            La mayor&iacute;a de los procesadores modernos incluye algunas
+            instrucciones de tipo vectorial, tales como las extensiones al
+            conjunto de instrucciones tales como MMX y SSE. Estas
+            instrucciones les permiten procesar flujos multimedia m&aacute;s
+            eficientemente.
+        </p>
+
+    </section>
+
+    <section class="content price">
+
+        <br><br><br><br><br>
+
+        <article class="contain">
+
+            <p>
+            Los Procesadores Digitales de Señales (DSP), son
+            procesadores especializados en el procesamiento de señales
+            tales como audio, v&iacute;deo, radar, sonar, radio, etc.
+            Cuentan con instrucciones tipo vectorial que los hace muy
+            aptos para dicha aplicaci&oacute;n. Suelen utilizarse en conjunto
+            con un microcontrolador en dispositivos como reproductores
+            de audio, reproductores de DVD y Blueray, tel&eacute;fonos
+            celulares, sistemas de entretenimiento, sistemas de
+            adquisici&oacute;n de datos, instrumentos m&eacute;dicos, controles
+            industriales, etc.
+            </p>
+
+            <br><br><br><br><br>
+
+            <p>
+                En los sistemas SMP (Simetric Multiprocessing), varios
+                procesadores comparten la misma memoria principal y
+                perif&eacute;ricos de Entrada /Salida, normalmente conectados por
+                un bus com&uacute;n.
+            </p>
+
+            <p>
+            Se conocen como sim&eacute;tricos, ya que ning&uacute;n procesador toma
+            el papel de maestro y los dem&aacute;s de esclavos, sino que todos
+            tienen derechos similares en cuanto al acceso a la memoria y
+            perif&eacute;ricos y ambos son administrados por el sistema
+            operativo.
+            Pueden formarse con varios n&uacute;cleos en un solo circuito
+            integrado o con varios circuitos integrados en una misma
+            tarjeta madre. La primera opci&oacute;n ha sido popularizada al
+            hacerse m&aacute;s econ&oacute;micos los procesadores multin&uacute;cleo de los
+            principales fabricantes y con su uso en sistemas de gama
+            media y baja, e inclusive en tel&eacute;fonos celulares y tabletas.
+            La segunda opci&oacute;n fue la que se uso en un principio y sigue
+            siendo usada en en estaciones de trabajo y en servidores de
+            alto rendimiento debido a que incrementa el poder
+            computacional del sistema, pero tambi&eacute;n incrementa
+            considerablemente el costo del sistema.
+            </p>
+
+            <p center><img src="../img/bus.png" height="200" width="400"></p>
+
+        </article>    
+    </section>
+
+    <section class="content contact">
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        <h2 class="title">Clusters</h2>
+
+        <p>
+            Conjuntos de computadoras independientes conectadas en
+            una red de &aacute;rea local o por un bus de interconexi&oacute;n y que
+            trabajan cooperativamente. Con un sistema de procesamiento
+            paralelo o distribuido. Consta de un conjunto
+            de computadoras independientes, interconectadas entre s&iacute;, de
+            tal manera que funcionan como un solo recurso
+            computacional.
+            Es clave en su funcionamiento contar con un sistema
+            operativo y programas de aplicaci&oacute;n capaces de distribuir el
+            trabajo entre las computadoras de la red.
+            Este tipo de computadora paralela se ha vuelto muy popular
+            por que permite usar los avances en los procesadores
+            comerciales que tienen una muy buena relaci&oacute;n costo
+            rendimiento y se puede incorporar r&aacute;pidamente los avances
+            que proporciona las nuevas tecnolog&iacute;as en cuanto es
+            econ&oacute;micamente viable.
+            Sin embargo, se debe tener cuidado al implementar la
+            aplicaci&oacute;n, ya que si los datos que hay que pasar de un
+            procesador a otro son demasiados, el tiempo empleado en
+            pasar informaci&oacute;n de un nodo a otro puede sobrepasar a la
+            ganancia que se tiene al dividir el trabajo entre varios
+            procesadores.
+        </p>
+
+        <p center><img src="../img/red.png" height="200" width="400"></p>
+
+    </section>
+
+    <section class="content price">
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <article class="contain">
+            <h2 class="title">Procesadores Gr&aacute;ficos</h2>
+
+            <p>
+                (Graphics Processing Unit GPU)
+                Sistemas diseñados originalmente para el procesamiento de
+                gr&aacute;ficos, con m&uacute;ltiples procesadores vectoriales sencillos
+                compartiendo la misma memoria.
+                La cual tambi&eacute;n puede ser accedida por el CPU. Por la gran
+                cantidad de n&uacute;cleos con los que cuenta, logran un excelente
+                desempeño al ejecutar algoritmos que se adaptan a ser
+                paralelizados, a tal grado que muchas de las
+                supercomputadoras m&aacute;s r&aacute;pidas de la actualidad utilizan
+                estos procesadores, y los fabricantes de tarjetas gr&aacute;ficas
+                producen versiones de sus productos especializadas en
+                acelerar los c&aacute;lculos de prop&oacute;sito general.
+            </p>
+
+                <p center><img src="../img/dram.png" height="200" width="400"></p>
+        </article>    
+    </section>
+
+    <section class="content price">
+    </section>
+
+    
+    <section class="content price">
+    </section>
+
+
+ 
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Segmentaci&oacute;n de instrucciones</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">2.3.2 Segmentaci&oacute;n de instrucciones</h2>
+
+        <p>
+            Es una t&eacute;cnica que permite implementar el paralelismo a nivel de
+             instrucci&oacute;n en un &uacute;nico procesador. La segmentaci&oacute;n intenta 
+             tener ocupadas con instrucciones todas las partes del procesador dividiendo las 
+             instrucciones en una serie de pasos secuenciales que efectuar&aacute;n distintas 
+             unidades de la CPU, tratando en paralelo diferentes partes de las instrucciones. 
+             Permite una mayor tasa de transferencia efectiva por parte de la CPU que la que ser&iacute;a 
+             posible a una determinada frecuencia de reloj, pero puede aumentar la latencia debido al 
+             trabajo adicional que supone el propio proceso de la segmentaci&oacute;n.
+
+        </p>
+
+    </header>
+    <section class="content sau"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">N&uacute;mero de pasos</h2>
+
+        <p>           
+            El n&uacute;mero de pasos dependientes var&iacute;an seg&uacute;n
+             la arquitectura de la m&aacute;quina. Algunos ejemplos:
+        </p>
+        <p>
+            Entre 1956 y 1961, el proyecto IBM stretch propon&iacute;a los t&eacute;rminos 
+            Fetch (Lectura), Decode (Decodificaci&oacute;n) y Execute (Ejecuci&oacute;n) que se 
+            convirtieron en habituales.
+            La segmentaci&oacute;n RISC cl&aacute;sica comprende:
+        </p>
+        <div class="box-container">
+            <div class="box">
+                <i class="fab fa-angular"></i>
+
+                <p>Lectura de instrucci&oacute;n</p>
+
+            </div>
+            <div class="box">
+                <i class="fab fa-angular"></i>
+
+
+                <p>Decodificaci&oacute;n de instrucci&oacute;n y lectura de registro</p>
+
+            </div>
+            <div class="box">
+                <i class="fab fa-angular"></i>
+
+                <p>Ejecuci&oacute;n</p>
+
+            </div>
+            <div class="box">
+                <i class="fab fa-angular"></i>
+
+
+                <p>Acceso a memoria</p>
+
+            </div>
+            <div class="box">
+                <i class="fab fa-angular"></i>
+
+                <p>Escritura de vuelta en el registro</p>
+
+            </div>
+        </div>
+    </section>
+    
+    <section class="content about">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+       
+        <p>
+            Las microcontroladoras Atmel AVR y PIC disponen cada una de segmentaci&oacute;n de dos etapas.
+            Muchos diseños incluyen segmentaci&oacute;n de 7, 10 e incluso 20 etapas (como es el caso del
+             Pentium 4 de Intel).
+            Los n&uacute;cleos "Prescott" y "Cedar Mill" de la microarquitectura NetBurst de Intel, 
+            utilizados en las versiones m&aacute;s recientes del Pentium 4 y sus derivados Pentium D y 
+            Xeon, tienen una segmentaci&oacute;n de 31 etapas.
+            El "Xelerated X10q Network Processor" cuenta con una segmentaci&oacute;n de m&aacute;s de
+         1000 etapas, si bien en este caso 200 de estas etapas representan CPU independientes con 
+         instrucciones programadas de forma individual. Las etapas restantes se usan para coordinar 
+         los accesos a la memoria y las unidades funcionales presentes en el chip.
+              
+        </p>
+    </section>
+
+    <section class="content price">
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        
+        <p center><img src="../img/segmentacion.png" height="300" width="400"></p>   
+    </section>
+    
+    <section class="content price"></section>
+   
+</body>
+</html>

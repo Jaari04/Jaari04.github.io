@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Entrda/Salida</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">3.2.1 Entrada/Salida</h2>
+
+        <p>
+            Tanto en la E/S programada como la basada en interrupciones, la UCP 
+            debe encargarse de la transferencia de datos una vez que sabe que hay
+             datos disponibles en el controlador. Una mejora importante para incrementar
+              la concurrencia entre la UCP y la E/S consiste en que el controlador del 
+              dispositivo se pueda encargar de efectuar la transferencia de datos,
+               liberando de este trabajo a la UCP, e interrumpir a la UCP s&oacute;lo
+                cuando haya terminado la operaci&oacute;n completa de E/S. Esta t&eacute;cnica 
+                se denomina acceso directo a memoria (DMA, Direct Memory Access).
+
+        </p>
+
+    </header>
+
+    <section class="content sau">
+
+        <p>            
+            Cuando se utiliza acceso directo a memoria, es el controlador el que se encarga 
+            directamente de transferir los datos entre el perif&eacute;rico y la memoria principal, 
+            sin requerir intervenci&oacute;n alguna por parte del procesador. Esta t&eacute;cnica 
+            funciona de la siguiente manera: cuando el procesador desea que se imprima un bloque de
+             datos, env&iacute;a una orden al controlador indic&aacute;ndole la siguiente
+              informaci&oacute;n:
+        </p>
+    </section>
+
+    <section class="content about">
+        <p>
+            * Tipo de operaci&oacute;n: lectura o escritura.</p>
+
+            <p>* Perif&eacute;rico involucrado en la operaci&oacute;n</p>
+            <p>* La direcci&oacute;n de memoria desde la que se va a leer o a la que va 
+                a escribir directamente con el controlador de dispositivo (direcci&oacute;n).
+            </p>
+
+           <p> * El n&uacute;mero de bytes a transferir (contador).
+        </p>
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+           <p>
+            Donde el campo Operaci&oacute;n corresponde al c&oacute;digo de 
+            operaci&oacute;n de las instrucciones m&aacute;quina normal. Especifica la 
+            operaci&oacute;n que debe realizar la CCW. La unidad de control decodifica este 
+            campo y env&iacute;a las señales adecuadas de control al dispositivo. Existen varias 
+            operaciones, las m&aacute;s importantes son las siguientes:
+
+           </p>
+
+
+
+           <p> * Lectura: el canal transfiere a memoria principal un bloque de palabras de 
+            tamaño especificado en el campo nº de palabras, en orden ascendente de direcciones, 
+            empezando en la direcci&oacute;n especificada en el campo direcci&oacute;n del dato.
+           </p>
+
+           <p>
+            * Escritura: el canal transfiere datos de memoria principal al dispositivo. 
+            Las palabras se transfieren en el mismo orden que en la operaci&oacute;n de lectura.
+           
+           </p>
+
+           <p>  * Control: se utiliza esta orden para enviar instrucciones espec&iacute;ficas al
+             dispositivo de E/S, como rebobinar una cinta magn&eacute;tica, etc.
+           </p>
+           <p>
+            * Bifurcaci&oacute;n: cumple en el programa de canal la misma funci&oacute;n que 
+            una instrucci&oacute;n de salto en un programa normal. El canal ejecuta las CCW en 
+            secuencia, salvo cuando aparece una CCW de este tipo, que utiliza el campo 
+            direcci&oacute;n del dato como la direcci&oacute;n de la siguiente CCW a ejecutar.
+
+           </p>
+        </article>    
+    </section>
+
+    <section class="content contact"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>
+            Los pasos a seguir en una operaci&oacute;n de E/S con DMA son los siguientes:</p>
+
+            <p>
+                1. Programaci&oacute;n de la operaci&oacute;n de E/S. Se indica al controlador la 
+                operaci&oacute;n, los datos a transferir y la direcci&oacute;n de memoria sobre la
+                 que se efectuar&aacute; la operaci&oacute;n.
+
+            </p>
+<p>  2. El controlador contesta aceptando la petici&oacute;n de E/S.
+
+</p>
+            <p>
+
+                3. El controlador le ordena al dispositivo que lea (para operaci&oacute;n de lectura)
+                 una cierta cantidad de datos desde una posici&oacute;n determinada del dispositivo a
+                  su memoria interna.
+
+            </p>
+
+            <p>
+                4. Cuando los datos est&aacute;n listos, el controlador los copia a la posici&oacute;n
+                 de memoria que tiene en sus registros, incrementa dicha posici&oacute;n de memoria y 
+                 decrementa el contador de datospendientes de transferir.
+                
+            </p>
+    </section>
+    
+    <section class="content price">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
+        <p>Los pasos 3 y 4 se repiten hasta que no quedan m&aacute;s datos por leer.
+        </p>
+
+        <p>Cuando el registro de contador est&aacute; a cero, el controlador 
+            interrumpe a la UCP para in dicar que la operaci&oacute;n de DMA ha terminado.
+        </p>
+        
+
+        
+        <p center><img src="../img/ess.gif" height="300" width="400"></p>
+    </section>
+    
+    <section class="content price"></section>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Estructura de Buses</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">1.2.4.2 Estructura de Buses</h2>
+
+        <p>
+            Existen dos organizaciones f&iacute;sicas de operaciones E/S que tienen que 
+            ver con los buses que son:
+
+        </p>
+        
+        <p>
+            Bus &uacute;nico
+            Bus dedicado
+        </p>
+
+    </header>
+    
+    <section class="content sau">
+        <h2 class="title">Productos</h2>
+
+        <p>
+            La primera gran diferencia entre estas dos tipos de estructuras es 
+             que el bus &uacute;nico no permite un controlador DMA (todo se controla 
+             desde la CPU), mientras que el bus dedicado si que soporta este controlador.
+</p>
+<p>
+    El bus dedicado trata a la memoria de manera distinta que a los perif&eacute;ricos 
+    (utiliza un bus especial) al contrario que el bus &uacute;nico que los considera a ambos
+     como posiciones de memoria (incluso equipara las operaciones E/S con las de lectura/escritura en
+      memoria). Este bus especial que utiliza el bus dedicado tiene 4 componentes fundamentales:
+
+</p>
+    </section>
+
+    <section class="content about">
+
+        <p>Datos: Intercambio de informaci&oacute;n entre la CPU y los perif&eacute;ricos.
+            Control: Lleva informaci&oacute;n referente al estado de los perif&eacute;ricos (petici&oacute;n de interrupciones).
+            Direcciones: Identifica el perif&eacute;rico referido.
+            Sincronizaci&oacute;n: Temporiza las señales de reloj..</p>
+
+    </section>
+
+    
+    <section class="content price">
+        <article class="contain">
+            <p>           
+                La mayor ventaja del bus &uacute;nico es su simplicidad de 
+                estructura que le hace ser m&aacute;s econ&oacute;mico, pero no permite 
+                que se realice a la vez transferencia de informaci&oacute;n entre la memoria y el
+                 procesador y entre los perif&eacute;ricos y el procesador.
+                </p>
+
+                <p>
+                    Por otro lado el bus dedicado es mucho m&aacute;s flexible y permite 
+                    transferencias simult&aacute;neas. Por contra su estructura es m&aacute;s compleja y
+                     por tanto sus costes son mayores.
+           
+                </p>
+                
+            <p center><img src="../img/estructura.jpg" height="400" width="600"></p>
+
+        </article>    
+    </section>
+    
+    <section class="content price"></section>
+
+</body>
+</html>

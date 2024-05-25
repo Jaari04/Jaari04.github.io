@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Memoria Cach&eacute;</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header"><br><br><br><br><br>
+        <h2 class="title">1.2.2.3 Memoria Cach&eacute;</h2>
+
+        <p>
+            Dentro de nuestro procesador no s&oacute;lo se encuentran los
+            componentes que hacen posible sus enormes capacidades de
+            computaci&oacute;n, tambi&eacute;n hay una pequeña memoria que se
+            encarga de conseguir que el trabajo de nuestro
+            procesador pueda realizarse a la velocidad que este opera.
+            Es la memoria de acceso r&aacute;pido de una computadora, que
+            guarda temporalmente las &uacute;ltimas informaciones procesadas.
+            La memoria cach&eacute; es un b&uacute;fer especial de memoria que
+            poseen las computadoras, que funciona de manera similar a
+            la memoria principal, pero es de menor tamaño y de acceso
+            m&aacute;s r&aacute;pido. Es usada por el procesador para reducir el
+            tiempo de acceso a datos ubicados en la memoria principal
+            que se utilizan con m&aacute;s frecuencia.
+            La cach&eacute; es una memoria que se sit&uacute;a entre la unidad central
+            de procesamiento (CPU) y la memoria de acceso
+            aleatorio (RAM) para acelerar el intercambio de datos.
+            Cuando se accede por primera vez a un dato, se hace una
+            copia en la cach&eacute;; los accesos siguientes se realizan a dicha
+            copia, haciendo que sea menor el tiempo de acceso medio al
+            dato.
+        </p>
+
+    </header>
+
+
+    <section class="content sau">
+
+        <p>Cuando el procesador necesita leer o escribir en una
+            ubicaci&oacute;n en memoria principal, primero verifica si una copia de los datos est&aacute; en la memoria cach&eacute;; si es as&iacute;, el procesador de inmediato lee o escribe en la memoria cach&eacute;,
+            que es mucho m&aacute;s r&aacute;pido que de la lectura o la escritura a la
+            memoria principal.</p>
+            <p center><img src="../img/cache0.png" height="300" width="400"></p>
+
+    </section>
+
+    <section class="content about">
+        <h2 class="title">Memoria cach&eacute; nivel 1 ( L1)</h2>
+
+        <p> Tambi&eacute;n llamada memoria interna, se encuentra en el n&uacute;cleo
+            del procesador. Es utilizada para almacenar y acceder a datos
+            e instrucciones importantes y de uso frecuente, agilizando
+            los procesos al ser el nivel que ofrece un tiempo de respuesta
+            menor. Se divide en dos subniveles:
+            Nivel 1 Data cach&eacute;: se encarga de almacenar datos usados
+            frecuentemente.</p>
+
+            <p>
+                Nivel 1 Instruction cach&eacute;: se encarga de almacenar
+                instrucciones usadas frecuentemente.
+            </p>
+    </section>
+
+    <section class="content price"><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <article class="contain">
+            <h2 class="title">Memoria cach&eacute; nivel 2 (L2)</h2>
+
+            <p> Se encarga de almacenar datos de uso frecuente, es mayor
+                que la cach&eacute; L1, pero a costa de ser m&aacute;s lenta, aun as&iacute; es m&aacute;s
+                r&aacute;pida que la memoria principal (RAM).</p>
+
+            <p>
+                Puede ser inclusiva y contener una copia del nivel 1 adem&aacute;s
+                de informaci&oacute;n extra, o exclusiva y que su contenido sea
+                totalmente diferente de la cache L1, proporcionando as&iacute;
+                mayor capacidad total.
+            </p>
+
+            <p center><img src="../img/cache2.png" height="300" width="800"></p>
+        </article>    
+    </section>
+    <section class="content price"></section>
+    <section class="content contact">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="title">Memoria cach&eacute; nivel 3 ( L3).;</h2>
+
+        <p> Es m&aacute;s r&aacute;pida que la memoria principal (RAM), pero m&aacute;s
+            lenta que L2, ayuda a que el sistema guarde gran cantidad de
+            informaci&oacute;n agilizando las tareas del procesador.</p>
+            <p> En esta memoria se agiliza el acceso a datos e instrucciones
+                que no fueron localizadas en L1 o L2.
+                Al igual que la L2, puede ser inclusiva y contener una copia
+                de L2 adem&aacute;s de informaci&oacute;n extra o, por el contrario, ser
+                exclusiva y contener informaci&oacute;n totalmente diferente a la de
+                los niveles anteriores, consiguiendo as&iacute; una mayor capacidad
+                total.</p>
+                
+            <p center><img src="../img/principal.png" height="300" width="400"></p'>
+
+    </section>
+    <section class="content price"></section>
+    <section class="content price"></section>
+
+</body>
+</html>

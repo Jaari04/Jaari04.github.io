@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <title>1.1.1 Cl&aacute;sicas</title>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="./Unidad1.html">Unidad 1</a>
+            <a href="./Unidad2.html">Unidad 2</a>
+            <a href="./Unidad3.html">Unidad 3</a>
+            <a href="./Unidad4.html">Unidad 4</a>
+            <a href="./Unidad5.html">Prácticas</a>
+            <a href="./Reportes.html">Reportes</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+
+        <h2  class="title" text-align = "center">1.1.1 Cl&aacute;sicas</h2> 
+
+        <p>Estas arquitecturas se desarrollaron en las primeras computadoras electromec&aacute;nicas y 
+            de tubos de vac&iacute;o. Aun son usadas en procesadores empotrados de gama baja y son la 
+            base de la mayor&iacute;a de las arquitecturas modernas.</p>
+        
+    </header>
+
+
+    <section class="content sau">
+        <h2 class="title">Arquitectura Mauchly-Eckert (Von Newman)</h2>
+
+        <p>Esta arquitectura fue utilizada en la computadora ENIAC. Consiste en una unidad central de 
+            proceso que se comunica a trav&eacute;s de un solo bus con un banco de memoria en donde 
+            se almacenan tanto los c&oacute;digos de instrucci&oacute;n del programa, como los datos 
+            que ser&aacute;n procesados por este.</p>
+
+        <p>Ejemplo de esta versatilidad es el funcionamiento de los compiladores, los cuales son 
+            programas que toman como entrada un archivo de texto conteniendo c&oacute;digo fuente y 
+            generan como datos de salida, el c&oacute;digo m&aacute;quina que corresponde a dicho 
+            c&oacute;digo fuente (Son programas que crean o modifican otros programas).</p>
+
+    </section>
+
+    <section class="content about">
+
+        <br><br><br>
+        <h2 class="title">Desventajas:</h2>
+
+        <p>Es que el bus de datos y direcciones  &uacute;nico se convierte en un cuello de botella por 
+            el cual debe pasar toda la informaci&oacute;n que se lee de o se escribe a la memoria, 
+            obligando a que todos los accesos a esta sean secuenciales.</p>
+            
+        <p center><img src="../img/modelo.jpg" height="200" width="400"></p>
+
+    </section>
+
+    <section class="content price">
+        
+        <br><br><br><br><br>
+        <article class="contain">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h2 class="title">Arquitectura Harvard</h2>
+
+            <p>Esta arquitectura surgi&oacute; en la universidad del mismo nombre, poco despu&eacute;s de 
+                que la arquitectura Von Newman apareciera en la universidad de Princeton. Al igual que en la 
+                arquitectura Von Newman, el programa se almacena como un c&oacute;digo num&eacute;rico en 
+                la memoria, pero no en el mismo espacio de memoria ni en el mismo formato que los datos. 
+                Por ejemplo, se pueden almacenar las instrucciones en doce bits en la memoria de programa, 
+                mientras los datos de almacenan en ocho bits en una memoria aparte.</p>
+
+                <p><img src="../img/harvad.jpg" height="200" width="400"></p>
+                
+        </article>    
+    </section>
+
+    <section class="content contact">
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <p>En la actualidad la mayor&iacute;a de los procesadores modernos se conectan al exterior de 
+            manera similar a a la arquitectura Von Newman, con un banco de memoria masivo &uacute;nico, 
+            pero internamente incluyen varios niveles de memoria cache con bancos separados en cache de 
+            programa y cache de datos, buscando un mejor desempeño sin perder la versatilidad.</p>
+    
+    </section>
+
+    <section class="content price">
+    </section>
+
+</body>
+</html>
